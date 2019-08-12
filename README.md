@@ -8,7 +8,7 @@ Data om broen vil brukes av mange forskjellige aktører, som igjen bruker mange 
 
 Dette prosjektet i Teknisk Rom i buildingSMART Norge skal bistå BLOC til å tilgjengeliggjøre disse kodesystemene digitalt. Prosjektet har følgende leveranser:
 
-1) Maskinlesbar datamodell i semantisk web standard formater (RDF/OWL) som gjengir V440 og R762, ved bruk av Modelling and Linking Guide fra CEDR Interlink (som nå også standardiseres i CEN 442 WG4 TG3).
+1) Maskinlesbar datamodell i semantisk web standard formater (RDF/OWL) som gjengir [V440](handboker/v440) og [R762](handboker/r762), ved bruk av Modelling and Linking Guide fra CEDR Interlink (som nå også standardiseres i CEN 442 WG4 TG3).
 
 2) Tilgjengeliggjøre datamodell av V440 og R762 på nett tilsvarende slik EuroOTL har blitt publisert (teknisk rapport og viewer).
 
