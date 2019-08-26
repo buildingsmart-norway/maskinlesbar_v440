@@ -23,6 +23,8 @@ For mer informasjon om prosjektet, kontakt Leder for Teknisk Rom på [teknisk@bu
 
 Det vil bli gitt informasjon om prosjektet i de regelmessige møtene i Teknisk Rom. Prosjektet vil også bruke denne repositorien underveis i utviklingen, så man kan holde seg informert med å følge med på aktiviteten her.
 
+Innledende utforskning og modellering finnes i denne [miro tavlen](https://miro.com/app/board/o9J_kwr0pvw=/). 
+
 ## Hvordan bidra
 Det er flere måter å bidra på.
 
