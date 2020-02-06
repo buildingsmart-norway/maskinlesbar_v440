@@ -17,7 +17,7 @@ Dette prosjektet i Teknisk Rom i buildingSMART Norge skal bistå BLOC til å til
 ## Hvordan delta og være informert
 Abeidet fåregår i en prosjektgruppe under Teknisk Rom i buildingSMART Norge, ledet av Leder for Teknisk Rom, Jan-Erik Hoel.
 
-I tillegg deltar Preben Madsen og Bjørnar Markussen fra BLOC, Chi Ho Lau fra buildingSMART Norge, Sigve Pettersen fra [mok-see], og teknsik ekspert Lars Wikström fra Triona. 
+I tillegg deltar Preben Madsen og Bjørnar Markussen fra BOLC, Chi Ho Lau fra buildingSMART Norge, Sigve Pettersen fra [mok-see], og teknsik ekspert Lars Wikström fra Triona. 
 
 For mer informasjon om prosjektet, kontakt Leder for Teknisk Rom på [teknisk@buildingsmart.no](teknisk@buildingsmart.no).
 
