@@ -17,7 +17,7 @@ Dette prosjektet i Teknisk Rom i buildingSMART Norge skal bistå BLOC til å til
 ## Hvordan delta og være informert
 Abeidet fåregår i en prosjektgruppe under Teknisk Rom i buildingSMART Norge, ledet av Leder for Teknisk Rom, Jan-Erik Hoel.
 
-I tillegg deltar Preben Madsen og Bjørnar Markussen fra BLOC, samt Chi Ho Lau og Sigve Pettersen fra buildingSMART Norge.
+I tillegg deltar Preben Madsen og Bjørnar Markussen fra BLOC, Chi Ho Lau fra buildingSMART Norge, Sigve Pettersen fra [mok-see], og teknsik ekspert Lars Wikström fra Triona. 
 
 For mer informasjon om prosjektet, kontakt Leder for Teknisk Rom på [teknisk@buildingsmart.no](teknisk@buildingsmart.no).
 
@@ -37,6 +37,8 @@ Eksperter vil arbeide i excel og et skript vil bli utviklet til å lage RDF/TTL 
 ## EUROTL Modelling and Linking
 
 Prosjektet EUROTL utviklet en kjerneontologi, og et sett linker til andre ontologier, for å kunne integrere og skape interoperabilitet mellom de europeiske objekttype katalogene (slik som norske NVDB) mulig. Les mer om [EUROTL ontologiene her](https://www.roadotl.eu/static/eurotl-ontologies/index.html).
+
+Semantic Modelling and Linking Guide (SMLG) fra EUROTL prosjektet har blitt videreført i CEN 442 WG4 TG3. Dette prosjektet tester og bidrar med innspill til SMLG underveis i arbeidet. 
 
 Dette prosjektet vil søke å linke til og gjenbruke innhold, samt følge veiledningene som ble utarbeidet i dette prosjektet.
 
