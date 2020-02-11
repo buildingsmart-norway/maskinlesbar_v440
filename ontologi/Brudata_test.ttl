@@ -1,0 +1,47 @@
+# baseURI: http://www.statensvegvesen.no/def/Brudata_test
+# imports: http://www.vegvesen.no/def/test/v440-brudata-owl
+# imports: http://www.vegvesen.no/def/testv440-owl
+# prefix: Brudata_test
+
+@prefix Brudata_test: <http://www.statensvegvesen.no/def/Brudata_test#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix v440: <http://www.vegvesen.no/def/test/v440-owl#> .
+@prefix v440bd: <http://www.vegvesen.no/def/test/v440-brudata-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.statensvegvesen.no/def/Brudata_test>
+  rdf:type owl:Ontology ;
+  owl:imports <http://www.vegvesen.no/def/test/v440-brudata-owl> ;
+  owl:imports <http://www.vegvesen.no/def/test/v440-owl> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+Brudata_test:Størrelser_for_bruer_1
+  rdf:type v440bd:Størrelser_for_bruer ;
+  v440bd:AntallSpenn "1" ;
+  v440bd:Bruareal "123"^^<http://qudt.org/vocab/quantitykind/Area> ;
+  v440bd:Brubredde "12"^^<http://qudt.org/vocab/quantitykind/Length> ;
+  v440bd:Brulengde_vb "2000"^^<http://qudt.org/vocab/quantitykind/Length> ;
+  v440bd:Skjevhet_sluttpunkt "1"^^<http://qudt.org/vocab/quantitykind/Angle> ;
+  v440bd:StørsteSpenn "2000"^^<http://qudt.org/vocab/quantitykind/Length> ;
+.
+Brudata_test:Vegbru_1
+  rdf:type v440:Vegbru ;
+  v440bd:harStørrelser_for_bruer Brudata_test:Størrelser_for_bruer_1 ;
+  v440bd:harVegidentifisering Brudata_test:Vegidentifisering_1 ;
+.
+Brudata_test:Vegidentifisering_1
+  rdf:type v440bd:Vegidentifisering ;
+  v440bd:AntallFelt 2 ;
+  v440bd:Beliggenhet v440:Vegdata_Kode_for_beliggenhet_Byggverk_langs_veg ;
+  v440bd:BruOver v440:Vegdata_Kode_for_bru_over_Bilveg ;
+  v440bd:G_S_Bane v440:Vegdata_Kode_for_gang_sykkelbane_Ingen ;
+  v440bd:Hovedparsell 77 ;
+  v440bd:ID "ABC123" ;
+  v440bd:ID_status v440:Vegdata_Kode_for_id_status_nvdb_ok ;
+  v440bd:KilometreringStart 12345 ;
+  v440bd:Navn_på_veg_elv_fjord "Bjørnafjorden" ;
+  v440bd:Vegkategori v440:Vegdata_Kode_for_vegkategori_Fylkesveg ;
+  v440bd:Vegnummer "14" ;
+.

@@ -1,0 +1,337 @@
+# baseURI: http://www.vegvesen.no/def/test/v440-mapper2
+# imports: http://example.org/my200115_v440_Ontologi
+# imports: http://spinrdf.org/spin
+# imports: http://www.vegvesen.no/def/test/v440-owl
+
+@prefix : <http://www.vegvesen.no/def/test/v440-mapper2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spread: <http://example.org/my200115_v440_Ontologi#> .
+@prefix v440-mapper: <http://www.vegvesen.no/def/test/v440-mapper#> .
+@prefix v440-owl: <http://www.vegvesen.no/def/test/v440-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#Sheet>
+  spin:rule [
+      rdf:type sp:Construct ;
+      sp:orderBy (
+          [
+            sp:varName "row" ;
+          ]
+        ) ;
+      sp:templates (
+          [
+            sp:object owl:Class ;
+            sp:predicate rdf:type ;
+            sp:subject [
+                sp:varName "uri" ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "baseUri" ;
+              ] ;
+            sp:predicate rdfs:subClassOf ;
+            sp:subject [
+                sp:varName "uri" ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "labelNo" ;
+              ] ;
+            sp:predicate rdfs:label ;
+            sp:subject [
+                sp:varName "uri" ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "code" ;
+              ] ;
+            sp:predicate v440-owl:kode ;
+            sp:subject [
+                sp:varName "uri" ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "kapitel" ;
+              ] ;
+            sp:predicate v440-owl:kapitel ;
+            sp:subject [
+                sp:varName "uri" ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "avsnitt" ;
+              ] ;
+            sp:predicate v440-owl:avsnitt ;
+            sp:subject [
+                sp:varName "uri" ;
+              ] ;
+          ]
+        ) ;
+      sp:where (
+          [
+            sp:object [
+                sp:varName "cell4" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#cell> ;
+            sp:subject spread:Kodelister ;
+          ]
+          [
+            sp:object [
+                sp:varName "row" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#row> ;
+            sp:subject [
+                sp:varName "cell4" ;
+              ] ;
+          ]
+          [
+            sp:object 4 ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#column> ;
+            sp:subject [
+                sp:varName "cell4" ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "kapitel" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#cellContents> ;
+            sp:subject [
+                sp:varName "cell4" ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "cell5" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#cell> ;
+            sp:subject spread:Kodelister ;
+          ]
+          [
+            sp:object [
+                sp:varName "row" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#row> ;
+            sp:subject [
+                sp:varName "cell5" ;
+              ] ;
+          ]
+          [
+            sp:object 5 ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#column> ;
+            sp:subject [
+                sp:varName "cell5" ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "avsnitt" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#cellContents> ;
+            sp:subject [
+                sp:varName "cell5" ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "cell6" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#cell> ;
+            sp:subject spread:Kodelister ;
+          ]
+          [
+            sp:object [
+                sp:varName "row" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#row> ;
+            sp:subject [
+                sp:varName "cell6" ;
+              ] ;
+          ]
+          [
+            sp:object 6 ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#column> ;
+            sp:subject [
+                sp:varName "cell6" ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "baseStr" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#cellContents> ;
+            sp:subject [
+                sp:varName "cell6" ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "cell7" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#cell> ;
+            sp:subject spread:Kodelister ;
+          ]
+          [
+            sp:object [
+                sp:varName "row" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#row> ;
+            sp:subject [
+                sp:varName "cell7" ;
+              ] ;
+          ]
+          [
+            sp:object 7 ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#column> ;
+            sp:subject [
+                sp:varName "cell7" ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "uriStr" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#cellContents> ;
+            sp:subject [
+                sp:varName "cell7" ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "cell8" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#cell> ;
+            sp:subject spread:Kodelister ;
+          ]
+          [
+            sp:object [
+                sp:varName "row" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#row> ;
+            sp:subject [
+                sp:varName "cell8" ;
+              ] ;
+          ]
+          [
+            sp:object 8 ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#column> ;
+            sp:subject [
+                sp:varName "cell8" ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "label" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#cellContents> ;
+            sp:subject [
+                sp:varName "cell8" ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "cell10" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#cell> ;
+            sp:subject spread:Kodelister ;
+          ]
+          [
+            sp:object [
+                sp:varName "row" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#row> ;
+            sp:subject [
+                sp:varName "cell10" ;
+              ] ;
+          ]
+          [
+            sp:object 10 ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#column> ;
+            sp:subject [
+                sp:varName "cell10" ;
+              ] ;
+          ]
+          [
+            sp:object [
+                sp:varName "code" ;
+              ] ;
+            sp:predicate <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#cellContents> ;
+            sp:subject [
+                sp:varName "cell10" ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type sp:iri ;
+                sp:arg1 [
+                    rdf:type sp:concat ;
+                    sp:arg1 "http://www.statensvegvesen.no/def/v440-owl#" ;
+                    sp:arg2 [
+                        sp:varName "baseStr" ;
+                      ] ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "baseUri" ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type sp:iri ;
+                sp:arg1 [
+                    rdf:type sp:concat ;
+                    sp:arg1 "http://www.statensvegvesen.no/def/v440-owl#" ;
+                    sp:arg2 [
+                        sp:varName "uriStr" ;
+                      ] ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "uri" ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type sp:strlang ;
+                sp:arg1 [
+                    sp:varName "label" ;
+                  ] ;
+                sp:arg2 "no" ;
+              ] ;
+            sp:variable [
+                sp:varName "labelNo" ;
+              ] ;
+          ]
+          [
+            rdf:type sp:Filter ;
+            sp:expression [
+                rdf:type sp:ne ;
+                sp:arg1 [
+                    sp:varName "row" ;
+                  ] ;
+                sp:arg2 0 ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+.
+<http://www.vegvesen.no/def/test/v440-mapper2>
+  rdf:type owl:Ontology ;
+  spin:imports <http://topbraid.org/spin/spinowl> ;
+  owl:imports <http://example.org/my200115_v440_Ontologi> ;
+  owl:imports <http://spinrdf.org/spin> ;
+  owl:imports <http://www.vegvesen.no/def/test/v440-owl> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
