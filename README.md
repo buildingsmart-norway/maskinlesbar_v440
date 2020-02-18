@@ -1,5 +1,7 @@
 # Maskinlesbar v440
 
+**Information about the project in English, please see the Presentations folder of this repo**
+
 ## Introduksjon
 
 Statens vegvesen prosjektet E39 Bjørnafjorden har som mål å utvikle et Open Live Center (BOLC) for å holde oversikt og kontroll på informasjonsmengdene, underveis og etter overlevering av prosjektet.
