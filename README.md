@@ -44,11 +44,5 @@ Semantic Modelling and Linking Guide (SMLG) fra EUROTL prosjektet har blitt vide
 
 Dette prosjektet vil søke å linke til og gjenbruke innhold, samt følge veiledningene som ble utarbeidet i dette prosjektet.
 
-## How to use the code in the Repository
-
-This project uses python 3 and jupyter notebooks. For accessing bSDD the request library is used, and for working with the ontology the RDFLib library is used.
-
-The [environment.yml](environment.yml). Install anaconda on your machine [create environment from this file](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file). After you can activate it by source activate {name of environment} and start the notebooks by ```jupyter notebook``` in the repo root.
-
 ## How to contribute
 Please add an issue with ideas or comments, and feel free to add pull requests with alterations.
