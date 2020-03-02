@@ -34,7 +34,7 @@ Det er flere måter å bidra på.
 
 2) Man kan også bidra gjennom innspill i møtene i Teknisk Rom.
 
-Eksperter vil arbeide i Excel og et skript vil bli utviklet til å lage RDF/TTL fil(er). Dette vil bli publisert her. RDF/TTL filene kan vises og endres i f.eks. [Protegé som er nedlastbar her](https://protege.stanford.edu/). Dette er en gratisk programvare for å jobbe med ontologier.
+Eksperter vil arbeide i Excel og et skript vil bli utviklet til å lage RDF/TTL fil(er). Dette vil bli publisert her. RDF/TTL filene kan vises og endres i f.eks. [Protegé som er nedlastbar her](https://protege.stanford.edu/). Dette er en gratis programvare for å jobbe med ontologier.
 
 ## EUROTL Modelling and Linking
 
