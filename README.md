@@ -7,7 +7,6 @@
 Statens vegvesen prosjektet E39 Bjørnafjorden har som mål å utvikle et Open Live Center (BOLC) for å holde oversikt og kontroll på informasjonsmengdene, underveis og etter overlevering av prosjektet.
 
 ![GitHub Logo](/Pictures/E39%20-%20Bjoernafjorden%20-%20Bakgrunn.png)
-Format: ![Bjørnaforden](url)
 
 Data om broen vil brukes av mange forskjellige aktører, som igjen bruker mange forskjellige verktøy, som igjen behandler mange forskjellige typer av data, som også bruker mange forskjellige formater. For å kunne håndtere denne informasjonsmengden effektivt er det kritisk at alle aktører og verktøy bruker samme kodesystem / språk for å angi betydningen av dataene. Dette kodesystemet/ “språket” er allerede angitt i Statens Vegvesens handbøker. For broer er Håndbok V440 Bruregistrering og R762 Prosesskode 2 – Standardbeskrivelse for bruer og kaier gitt av prosjektet som de viktigste handbøkene å følge.
 
