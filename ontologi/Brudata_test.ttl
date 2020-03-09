@@ -1,20 +1,20 @@
 # baseURI: http://www.statensvegvesen.no/def/Brudata_test
-# imports: http://www.vegvesen.no/def/test/v440-brudata-owl
-# imports: http://www.vegvesen.no/def/testv440-owl
+# imports: http://rdf.vegdata.no/v440-brudata-owl
+# imports: http://rdf.vegdata.no/v440-owl
 # prefix: Brudata_test
 
 @prefix Brudata_test: <http://www.statensvegvesen.no/def/Brudata_test#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix v440: <http://www.vegvesen.no/def/test/v440-owl#> .
-@prefix v440bd: <http://www.vegvesen.no/def/test/v440-brudata-owl#> .
+@prefix v440: <http://rdf.vegdata.no/v440-owl#> .
+@prefix v440bd: <http://rdf.vegdata.no/v440-brudata-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.statensvegvesen.no/def/Brudata_test>
   rdf:type owl:Ontology ;
-  owl:imports <http://www.vegvesen.no/def/test/v440-brudata-owl> ;
-  owl:imports <http://www.vegvesen.no/def/test/v440-owl> ;
+  owl:imports <http://rdf.vegdata.no/v440-brudata-owl> ;
+  owl:imports <http://rdf.vegdata.no/v440-owl> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
 Brudata_test:Størrelser_for_bruer_1
