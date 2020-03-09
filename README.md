@@ -1,8 +1,12 @@
 # Maskinlesbar v440
 
+**For information about the project in English, please see the Presentations folder of this repo**
+
 ## Introduksjon
 
-Prosjektet E39 Bjørnafjorden har som mål å utvikle et Open Live Center (BOLC) for å holde oversikt og kontroll på informasjonsmengdene, underveis og etter overlevering av prosjektet.
+Statens vegvesen prosjektet E39 Bjørnafjorden har som mål å utvikle et Open Live Center (BOLC) for å holde oversikt og kontroll på informasjonsmengdene, underveis og etter overlevering av prosjektet.
+
+![GitHub Logo](/Pictures/E39%20-%20Bjoernafjorden%20-%20Bakgrunn.png)
 
 Data om broen vil brukes av mange forskjellige aktører, som igjen bruker mange forskjellige verktøy, som igjen behandler mange forskjellige typer av data, som også bruker mange forskjellige formater. For å kunne håndtere denne informasjonsmengden effektivt er det kritisk at alle aktører og verktøy bruker samme kodesystem / språk for å angi betydningen av dataene. Dette kodesystemet/ “språket” er allerede angitt i Statens Vegvesens handbøker. For broer er Håndbok V440 Bruregistrering og R762 Prosesskode 2 – Standardbeskrivelse for bruer og kaier gitt av prosjektet som de viktigste handbøkene å følge.
 
@@ -32,7 +36,7 @@ Det er flere måter å bidra på.
 
 2) Man kan også bidra gjennom innspill i møtene i Teknisk Rom.
 
-Eksperter vil arbeide i Excel og et skript vil bli utviklet til å lage RDF/TTL fil(er). Dette vil bli publisert her. RDF/TTL filene kan vises og endres i f.eks. [Protegé som er nedlastbar her](https://protege.stanford.edu/). Dette er en gratisk programvare for å jobbe med ontologier.
+Eksperter vil arbeide i Excel og et skript vil bli utviklet til å lage RDF/TTL fil(er). Dette vil bli publisert her. RDF/TTL filene kan vises og endres i f.eks. [Protegé som er nedlastbar her](https://protege.stanford.edu/). Dette er en gratis programvare for å jobbe med ontologier.
 
 ## EUROTL Modelling and Linking
 
@@ -41,12 +45,6 @@ Prosjektet EUROTL utviklet en kjerneontologi og et sett linker til andre ontolog
 Semantic Modelling and Linking Guide (SMLG) fra EUROTL prosjektet har blitt videreført i CEN 442 WG4 TG3. Dette prosjektet tester og bidrar med innspill til SMLG underveis i arbeidet. 
 
 Dette prosjektet vil søke å linke til og gjenbruke innhold, samt følge veiledningene som ble utarbeidet i dette prosjektet.
-
-## How to use the code in the Repository
-
-This project uses python 3 and jupyter notebooks. For accessing bSDD the request library is used, and for working with the ontology the RDFLib library is used.
-
-The [environment.yml](environment.yml). Install anaconda on your machine [create environment from this file](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file). After you can activate it by source activate {name of environment} and start the notebooks by ```jupyter notebook``` in the repo root.
 
 ## How to contribute
 Please add an issue with ideas or comments, and feel free to add pull requests with alterations.
