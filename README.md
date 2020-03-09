@@ -48,8 +48,3 @@ Dette prosjektet vil søke å linke til og gjenbruke innhold, samt følge veiled
 
 ## How to contribute
 Please add an issue with ideas or comments, and feel free to add pull requests with alterations.
-
-## Generell informasjon
-Link til Youtubevideo av frokostmøte "Åpne internettstandarder for Digitale Tvillinger innenfor Bygg og Samferdsel" (05.03.2020).
-https://youtu.be/vSesWj667Ck
-![Frokostmøte](/Pictures/E39_breakfast.png)
