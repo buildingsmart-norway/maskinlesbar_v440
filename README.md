@@ -46,5 +46,10 @@ Semantic Modelling and Linking Guide (SMLG) fra EUROTL prosjektet har blitt vide
 
 Dette prosjektet vil søke å linke til og gjenbruke innhold, samt følge veiledningene som ble utarbeidet i dette prosjektet.
 
+## Generell informasjon
+Link til Youtubevideo av frokostmøte "Åpne internettstandarder for Digitale Tvillinger innenfor Bygg og Samferdsel" (05.03.2020).
+https://youtu.be/vSesWj667Ck
+![Frokostmøte](/Pictures/E39_breakfast.png)
+
 ## How to contribute
 Please add an issue with ideas or comments, and feel free to add pull requests with alterations.
