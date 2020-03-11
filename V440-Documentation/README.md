@@ -141,7 +141,7 @@ Utgående från detta så har vi valt att bygga taxonomin på följande sätt:
 
 Taxonomin beskriver förhållande mellan generella och specifika begrepp medan meronomin beskriver hur olika delar kan sättas samman i en består-av struktur. Här har man stora möjligheter att i ontologin begränsa urvalet av delar som något kan bestå av. Dock har vi ännu så länge gjort detta enkelt, utan stora restriktioner. Grovt sett ser meronomin ut på följande sätt:
 
-![](../Pictures/v440 - Meronomi.png)
+![](../Pictures/v440-Meronomi.png)
 
 Som synes är `v440:Byggverk` och `v440:Byggverksdel` länkade på två sätt, både via `v440bd:Type` och `v440bd:Hovedbyggverkstype`. Detta är för att en byggverksdel utgör hovedbyggverkstype när flera typer ingår i ett byggverk enligt v440 och vi vill kunna skilja på dessa. `v440:Byggverksdel` innehåller i sin tur `v440:Byggverkselement` via `v440bd:harElement`.
 
