@@ -1,6 +1,6 @@
 # baseURI: http://www.vegvesen.no/def/test/v440-mapper2
 # imports: http://example.org/my200115_v440_Ontologi
-# imports: http://rdf.vegdata.no/v440-owl
+# imports: http://rdf.vegdata.no/V440/v440-owl
 # imports: http://spinrdf.org/spin
 
 @prefix : <http://www.vegvesen.no/def/test/v440-mapper2#> .
@@ -11,7 +11,7 @@
 @prefix spin: <http://spinrdf.org/spin#> .
 @prefix spread: <http://example.org/my200115_v440_Ontologi#> .
 @prefix v440-mapper: <http://www.vegvesen.no/def/test/v440-mapper#> .
-@prefix v440-owl: <http://rdf.vegdata.no/v440-owl#> .
+@prefix v440-owl: <http://rdf.vegdata.no/V440/v440-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl#Sheet>
@@ -331,7 +331,7 @@
   rdf:type owl:Ontology ;
   spin:imports <http://topbraid.org/spin/spinowl> ;
   owl:imports <http://example.org/my200115_v440_Ontologi> ;
-  owl:imports <http://rdf.vegdata.no/v440-owl> ;
+  owl:imports <http://rdf.vegdata.no/V440/v440-owl> ;
   owl:imports <http://spinrdf.org/spin> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .

@@ -1,8 +1,8 @@
-# baseURI: http://rdf.vegdata.no/v440-owl
+# baseURI: http://rdf.vegdata.no/V440/v440-owl
 # imports: http://purl.org/dc/elements/1.1/
 # imports: http://xmlns.com/foaf/spec/
 
-@prefix : <http://rdf.vegdata.no/v440-owl#> .
+@prefix : <http://rdf.vegdata.no/V440/v440-owl#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -28,7 +28,7 @@ vann:preferredNamespaceUri
   rdfs:isDefinedBy vann: ;
   rdfs:label "Preferred Namespace Uri"@en ;
 .
-<http://rdf.vegdata.no/v440-owl>
+<http://rdf.vegdata.no/V440/v440-owl>
   rdf:type owl:Ontology ;
   dc:creator :SVV ;
   dc:creator :bSINorway ;
