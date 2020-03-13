@@ -18,7 +18,7 @@ Struktur
 Ontologin för håndbok v440 har delats upp i två delar:
 
 - **v440-owl.ttl** innehåller klasser, klasstaxonomi (rdfs:subClassOf) samt kodlistor med innehåll
-  - Namespace-uri : http://rdf.vegdata.no/v440-owl
+  - Namespace-uri : http://rdf.vegdata.no/V440/v440-owl
   - Namespace-prefix : v440
   - v440-owl.ttl importerar följande ontologier:
     - http://xmlns.com/foaf/spec/ (foaf)
@@ -27,7 +27,7 @@ Ontologin för håndbok v440 har delats upp i två delar:
   - Namespace-uri : http://rdf.vegdata.no/v440-brudata-owl
   - Namespace-prefix : v440bd
   - v440-brudata-owl.ttl importerar följande ontologier:
-    - http://rdf.vegdata.no/v440-owl (v440)
+    - http://rdf.vegdata.no/V440/v440-owl (v440)
     - http://xmlns.com/foaf/spec/ (foaf)
     - http://purl.org/dc/terms (dcterms)
     - <https://w3id.org/def/basicsemantics-owl> (basicsemantics). Basicsamentics importerar i sin tur ontologier från qudt (http://qudt.org/schema/qudt)
