@@ -19,7 +19,9 @@ Dette prosjektet i Teknisk Rom i buildingSMART Norge skal bistå BOLC til å til
 3) Gjennomføre [openLAB : Interoperate] for å støtte programvarer i implementering, samt lage veiledningsmateriale for programvareaktører og Bjørnafjorden for bruk i kravstilling.
 
 ## Hvordan delta og være informert
-Arbeidet foregår i en prosjektgruppe under Teknisk Rom i buildingSMART Norge, ledet av Leder for Teknisk Rom, Jan-Erik Hoel. Programvareleverandører og andre utviklere (f.eks. skriptere, plugin utviklere etc.) er også invitert med i [openLAB : Interoperate] som er et program hvor det vil bli gitt gratis teknisk support for implementasjon og testing av ontologien, samt anledning til å presentere demonstratorer for marekdet. 
+Arbeidet foregår i en prosjektgruppe under Teknisk Rom i buildingSMART Norge, ledet av Leder for Teknisk Rom, Jan-Erik Hoel. 
+
+Programvareleverandører og andre utviklere (f.eks. skriptere, plugin utviklere etc.) er også invitert med i **[openLAB : Interoperate]** som er et program hvor det vil bli gitt gratis teknisk support for implementasjon og testing av ontologien, samt anledning til å presentere demonstratorer for marekdet. 
 
 I tillegg deltar Preben Madsen og Bjørnar Markussen fra BOLC, Chi Ho Lau fra buildingSMART Norge, Sigve Pettersen fra [mok-see], og teknisk ekspert Lars Wikström fra Triona. 
 
