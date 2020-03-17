@@ -3,7 +3,7 @@
 I denne mappen vil presentasjoner fra møte bli delt som fil, eller som lenke i denne teksten.
 
 ## Agenda
-1. Velkommen:  Gjennomgang av programmet og målsetningen med møtet
+1. Velkommen:  Gjennomgang av programmet og målsetningen med møtet, ved Jan-Erik Hoel, prosjektleder og leder for Teknisk Undergruppe buildingSMART Norge.
 
 2. Presentasjon som omhandler fordeler med LD/SW teknologien, både generelt, men også spesielt for klassifisering på Bjørnarfjord prosjektet
 Presentasjon av Ingar Skogli, Statens Vegvesen
