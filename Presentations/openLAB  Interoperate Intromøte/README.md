@@ -10,11 +10,11 @@ Presentasjon av Ingar Skogli, Statens Vegvesen
 Presentasjon av Elin Dalen Rassmussen, E39 Bjørnafjorden
 [Presentasjon av Sigve Pettersen, [**mok**-see].](https://drive.google.com/file/d/1E9xiGx4FmrulroWPNiktE2zm2Z8rE18G/view?usp=sharing)
 
-3. Gjennomgang av V440 ontologiene og lærematerialet vi har ut”viklet for [openLAB : interoperate]
+3. Gjennomgang av V440 ontologiene og lærematerialet vi har ut”viklet for [openLAB : interoperate], ved Lars Wikstrøm fra Trinona. 
 
 4. Gjennomgang av GitHub struktur og bruk av GitHub under [openLAB : interoperate] ([Presentasjon av Sigve Pettersen, [**mok**-see].](https://docs.google.com/presentation/d/1zSoTC7L8XNs8TW4WxZdKUI8fUChtWZNnqHgTCglopLw/edit?usp=sharing))
 
-5. Demo av en klassifisert bru: Eksempel på et resultat som vi ønsker å produsere med funksjonalitet utviklet gjennom [openLAB : interoperate]
+5. Demo av en klassifisert bru: Eksempel på et resultat som vi ønsker å produsere med funksjonalitet utviklet gjennom [openLAB : interoperate], ved Bjørnar Markussen fra Aas Jacobsen og Sigve Pettersen [mok-see]. 
 
 6. Planlegging av videre arbeide:
 - Gjennomgang av arbeidsoppgaven til neste gang
