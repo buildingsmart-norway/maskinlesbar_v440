@@ -2538,6 +2538,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "02" ;
   rdfs:label "Akershus"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/02> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_Aust-Agder
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2545,6 +2546,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "09" ;
   rdfs:label "Aust-Agder"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/09> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_Buskerud
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2552,6 +2554,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "06" ;
   rdfs:label "Buskerud"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/06> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_Finnmark
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2559,6 +2562,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "20" ;
   rdfs:label "Finnmark"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/20> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_Hedmark
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2566,6 +2570,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "04" ;
   rdfs:label "Hedmark"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/04> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_Hordaland
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2573,6 +2578,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "12" ;
   rdfs:label "Hordaland"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/12> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_More_og_Romsdal
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2580,6 +2586,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "15" ;
   rdfs:label "Møre og Romsdal"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/15> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_Nord-Trondelag
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2587,6 +2594,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "17" ;
   rdfs:label "Nord-Trøndelag"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/17> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_Nordland
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2594,6 +2602,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "18" ;
   rdfs:label "Nordland"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/18> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_Oppland
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2601,6 +2610,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "05" ;
   rdfs:label "Oppland"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/05> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_Oslo
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2608,6 +2618,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "03" ;
   rdfs:label "Oslo"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/03> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_Ostfold
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2615,6 +2626,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "01" ;
   rdfs:label "Østfold"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/01> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_Rogaland
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2622,6 +2634,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "11" ;
   rdfs:label "Rogaland"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/11> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_Sogn_og_Fjordane
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2629,6 +2642,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "14" ;
   rdfs:label "Sogn og Fjordane"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/14> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_Sor-Trondelag
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2636,6 +2650,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "16" ;
   rdfs:label "Sør-Trøndelag"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/16> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_Telemark
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2643,6 +2658,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "08" ;
   rdfs:label "Telemark"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/08> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_Troms
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2650,6 +2666,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "19" ;
   rdfs:label "Troms"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/19> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_Vegdirektoratet
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2664,6 +2681,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "10" ;
   rdfs:label "Vest-Agder"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/10> ;
 .
 :Generelle_Administrative_Data_Fylkeskoder_Vestfold
   rdf:type :Generelle_Administrative_Data_Fylkeskoder ;
@@ -2671,6 +2689,7 @@ vann:preferredNamespaceUri
   :kapitel "V-2" ;
   :kode "07" ;
   rdfs:label "Vestfold"@no ;
+  owl:sameAs <http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Fylkesnummer/07> ;
 .
 :Generelle_Administrative_Data_Klimasone
   rdf:type owl:Class ;
@@ -2758,15 +2777,9 @@ vann:preferredNamespaceUri
   :avsnitt "V-2.4" ;
   :kapitel "V-2" ;
   :kode "-" ;
+  rdfs:comment "Bruk http://skjema.geonorge.no/SOSI/kodeliste/AdmEnheter/2019/Kommunenummer/nnnn"@no ;
   rdfs:label "Kode for kommune"@no ;
   rdfs:subClassOf :Generelle_Administrative_Data ;
-.
-:Generelle_Administrative_Data_Kode_for_kommune_Egen_liste
-  rdf:type :Generelle_Administrative_Data_Kode_for_kommune ;
-  :avsnitt "V-2.4" ;
-  :kapitel "V-2" ;
-  :kode "Egen liste" ;
-  rdfs:label "Egen liste - Kode for kommune"@no ;
 .
 :Generelle_Administrative_Data_Kode_for_vedlikeholdsansvarlig
   rdf:type owl:Class ;
