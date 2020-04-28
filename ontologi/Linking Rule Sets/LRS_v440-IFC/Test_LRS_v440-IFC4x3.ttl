@@ -1,0 +1,52 @@
+# baseURI: http://rdf.vegdata.no/V440/Test_LRS_v440-IFC4x3
+# imports: http://rdf.vegdata.no/V440/LRS_v440-IFC4x3
+# prefix: Test_LRS_v440-IFC4x3
+
+@prefix : <http://rdf.vegdata.no/V440/Test_LRS_v440-IFC4x3#> .
+@prefix LRS_v440-IFC4x3: <http://rdf.vegdata.no/V440/LRS_v440-IFC4x3#> .
+@prefix Test_LRS_v440-IFC4x3: <http://rdf.vegdata.no/V440/Test_LRS_v440-IFC4x3#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix v440: <http://rdf.vegdata.no/V440/v440-owl#> .
+@prefix v440bd: <http://rdf.vegdata.no/V440/v440-brudata-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://rdf.vegdata.no/V440/Test_LRS_v440-IFC4x3>
+  rdf:type owl:Ontology ;
+  spin:imports <http://topbraid.org/spin/owlrl-all> ;
+  spin:imports <http://topbraid.org/spin/rdfsplus> ;
+  owl:imports <http://rdf.vegdata.no/V440/LRS_v440-IFC4x3> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+Test_LRS_v440-IFC4x3:Flytebru_adskilte_flyteelementer_med_forankring_1
+  rdf:type v440:Flytebru_adskilte_flyteelementer_med_forankring ;
+  v440bd:harElement Test_LRS_v440-IFC4x3:Landkar_1 ;
+  v440bd:harElement Test_LRS_v440-IFC4x3:Pilar_1 ;
+.
+Test_LRS_v440-IFC4x3:Landkar_1
+  rdf:type v440:Landkar ;
+  v440bd:harUnderelement Test_LRS_v440-IFC4x3:Landkar_Fundament_1 ;
+  v440bd:harUnderelement Test_LRS_v440-IFC4x3:Landkar_Vegg_1 ;
+.
+Test_LRS_v440-IFC4x3:Landkar_Fundament_1
+  rdf:type v440:Landkar_Fundament ;
+.
+Test_LRS_v440-IFC4x3:Landkar_Vegg_1
+  rdf:type v440:Landkar_Vegg ;
+.
+Test_LRS_v440-IFC4x3:Pilar_1
+  rdf:type v440:Pilar ;
+.
+Test_LRS_v440-IFC4x3:Vegbru_1
+  rdf:type v440:Vegbru ;
+  v440bd:Hovedbyggverkstype Test_LRS_v440-IFC4x3:Flytebru_adskilte_flyteelementer_med_forankring_1 ;
+  v440bd:harVegidentifisering Test_LRS_v440-IFC4x3:Vegidentifisering_1 ;
+.
+Test_LRS_v440-IFC4x3:Vegidentifisering_1
+  rdf:type v440bd:Vegidentifisering ;
+  v440bd:KilometreringStart "12345"^^xsd:double ;
+  v440bd:Navn_pa_veg_elv_fjord "Bjørnafjorden"@no ;
+  v440bd:Vegnummer "39" ;
+.

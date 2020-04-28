@@ -2485,6 +2485,14 @@ Eksempler:
   rdfs:range :Trafikkromsmal ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
 .
+:harUnderelement
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Anger att ett Byggverkselement har underelement"@no ;
+  rdfs:domain v440:Byggverkselement ;
+  rdfs:label "har underelement"@no ;
+  rdfs:range v440:Byggverkselement ;
+  rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasPart> ;
+.
 :harVeggruppe
   rdf:type owl:ObjectProperty ;
   rdfs:comment "Veggruppen angir tillatt spesialtransport/tungtransport. Veggruppe A angir et vegnett uten bruer, eller inkluderer bruer med to eller flere felt. Veggruppe B betyr at vegnettet inneholder kun énfelts bruer. Merk at énfelts bruer konstruert for lastklassene 1969, 1971, 1986 og 1995 uten videre kan klassifiseres til Bk10 og dermed veggruppe A. For koder se pkt. V-4.3."@no ;
@@ -2678,6 +2686,11 @@ v440:Byggverkselement
       rdf:type owl:Restriction ;
       owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :Merknad_element ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+      owl:onProperty :harUnderelement ;
     ] ;
 .
 v440:Ferjeleie

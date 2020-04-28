@@ -1,0 +1,159 @@
+# baseURI: http://rdf.vegdata.no/V440/LRS_v440-IFC4x3
+# imports: http://rdf.vegdata.no/V440/v440-brudata-owl
+# imports: http://rdf.vegdata.no/V440/v440-owl
+# imports: http://spinrdf.org/spin
+# imports: http://www.buildingsmart-tech.org/ifc/IFC4x3_RC1
+# prefix: LRS_v440-IFC4x3
+
+@prefix : <http://rdf.vegdata.no/V440/LRS_v440-IFC4x3#> .
+@prefix LRS_v440-IFC4x3: <http://rdf.vegdata.no/V440/LRS_v440-IFC4x3#> .
+@prefix ifc: <http://www.buildingsmart-tech.org/ifc/IFC4x3_RC1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix v440: <http://rdf.vegdata.no/V440/v440-owl#> .
+@prefix v440bd: <http://rdf.vegdata.no/V440/v440-brudata-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://rdf.vegdata.no/V440/LRS_v440-IFC4x3>
+  rdf:type owl:Ontology ;
+  spin:imports <http://topbraid.org/spin/owlrl-all> ;
+  spin:imports <http://topbraid.org/spin/rdfsplus> ;
+  spin:imports <http://topbraid.org/spin/spinowl> ;
+#  owl:imports <http://rdf.vegdata.no/V440/v440-brudata-owl> ;
+  owl:imports <http://rdf.vegdata.no/V440/v440-owl> ;
+  owl:imports <http://spinrdf.org/spin> ;
+#  owl:imports <http://www.buildingsmart-tech.org/ifc/IFC4x3_RC1> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+v440:Bjelkebru_BH1
+  rdfs:subClassOf ifc:IfcBridgePart ;
+.
+v440:Bru_i_fylling
+  rdfs:subClassOf ifc:IfcBridge ;
+.
+v440:Buebru_og_hvelvbru
+  rdfs:subClassOf ifc:IfcBridgePart ;
+.
+v440:Byggverk
+  spin:rule [
+      rdf:type sp:Construct ;
+      sp:templates (
+          [
+            sp:object [
+                sp:varName "name" ;
+              ] ;
+            sp:predicate rdfs:label ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object _:b66790 ;
+            sp:predicate ifc:name_IfcRoot ;
+            sp:subject spin:_this ;
+          ]
+          [
+            sp:object [
+                sp:varName "name" ;
+              ] ;
+            sp:predicate <https://w3id.org/express#hasString> ;
+            sp:subject _:b66790 ;
+          ]
+        ) ;
+      sp:where (
+          [
+            rdf:type sp:TriplePath ;
+            sp:object [
+                sp:varName "vn" ;
+              ] ;
+            sp:path [
+                rdf:type sp:SeqPath ;
+                sp:path1 v440bd:harVegidentifisering ;
+                sp:path2 v440bd:Vegnummer ;
+              ] ;
+            sp:subject spin:_this ;
+          ]
+          [
+            rdf:type sp:TriplePath ;
+            sp:object [
+                sp:varName "ks" ;
+              ] ;
+            sp:path [
+                rdf:type sp:SeqPath ;
+                sp:path1 v440bd:harVegidentifisering ;
+                sp:path2 v440bd:KilometreringStart ;
+              ] ;
+            sp:subject spin:_this ;
+          ]
+          [
+            rdf:type sp:TriplePath ;
+            sp:object [
+                sp:varName "n" ;
+              ] ;
+            sp:path [
+                rdf:type sp:SeqPath ;
+                sp:path1 v440bd:harVegidentifisering ;
+                sp:path2 v440bd:Navn_pa_veg_elv_fjord ;
+              ] ;
+            sp:subject spin:_this ;
+          ]
+          [
+            rdf:type sp:Bind ;
+            sp:expression [
+                rdf:type sp:concat ;
+                sp:arg1 [
+                    sp:varName "vn" ;
+                  ] ;
+                sp:arg2 "-" ;
+                sp:arg3 [
+                    rdf:type xsd:string ;
+                    sp:arg1 [
+                        sp:varName "ks" ;
+                      ] ;
+                  ] ;
+                sp:arg4 "-" ;
+                sp:arg5 [
+                    sp:varName "n" ;
+                  ] ;
+              ] ;
+            sp:variable [
+                sp:varName "name" ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+.
+v440:Fagverksbru_sprengverksbru_og_hengverksbru
+  rdfs:subClassOf ifc:IfcBridgePart ;
+.
+v440:Grunnen_Peler
+  rdfs:subClassOf ifc:IfcPile ;
+.
+v440:Hengebru_skrastagbru_flytebru_og_nedtrykket_rorbru
+  rdfs:subClassOf ifc:IfcBridgePart ;
+.
+v440:Kai_bevegelig_bru_og_andre_brutyper
+  rdfs:subClassOf ifc:IfcBridgePart ;
+.
+v440:Kassebru
+  rdfs:subClassOf ifc:IfcBridgePart ;
+.
+v440:Kulvert_bjelkeramme_ror_og_hvelv_i_fylling
+  rdfs:subClassOf ifc:IfcBridgePart ;
+.
+v440:Landkar
+  rdfs:subClassOf ifc:IfcElementAssembly ;
+.
+v440:Landkar_Fundament
+  rdfs:subClassOf ifc:IfcFooting ;
+.
+v440:Landkar_Vegg
+  rdfs:subClassOf ifc:IfcWall ;
+.
+v440:Ordinar_bru_i_dagen
+  rdfs:subClassOf ifc:IfcBridge ;
+.
+v440:Platebru_bjelkeplatebru_og_ribbeplatebru
+  rdfs:subClassOf ifc:IfcBridgePart ;
+.
