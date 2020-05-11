@@ -55,3 +55,5 @@ https://youtu.be/vSesWj667Ck
 
 ## How to contribute
 Please add an issue with ideas or comments, and feel free to add pull requests with alterations.
+
+You can fork the repo, make your changes in the forked repo, and create a pull request. 
