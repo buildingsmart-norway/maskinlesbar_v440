@@ -719,6 +719,7 @@ vann:preferredNamespaceUri
   :kapitel "V-6" ;
   :kode "371"^^xsd:int ;
   rdfs:label "Bjelkebru platebærere konstant høyde sveiset med sveiseskjøter uten samvirke"@no ;
+  rdfs:seeAlso <http://rdf.vegdata.no/V440/handbok/doc/pics/Hb-V440-155.html> ;
   rdfs:subClassOf :Bjelkebru_platebaerere_konstant_hoyde ;
 .
 :Bjelkebru_platebaerere_variabel_hoyde
@@ -4524,12 +4525,9 @@ vann:preferredNamespaceUri
 .
 :Konstruksjoner_i_fylling
   rdf:type owl:Class ;
-  :avsnitt "V-7.F" ;
   :avsnitt "V-8" ;
-  :kapitel "V-7" ;
   :kapitel "V-8" ;
   :kode "-" ;
-  :kode "F" ;
   rdfs:label "Konstruksjoner i fylling"@no ;
   rdfs:subClassOf :Kodeliste ;
 .
@@ -4657,10 +4655,7 @@ vann:preferredNamespaceUri
 :Konstruksjoner_i_fylling_element
   rdf:type owl:Class ;
   :avsnitt "V-7.F" ;
-  :avsnitt "V-8" ;
   :kapitel "V-7" ;
-  :kapitel "V-8" ;
-  :kode "-" ;
   :kode "F" ;
   rdfs:label "Konstruksjoner i fylling"@no ;
   rdfs:subClassOf :Byggverkselement ;
@@ -8012,12 +8007,9 @@ vann:preferredNamespaceUri
 .
 :Spesielt_kaiutstyr
   rdf:type owl:Class ;
-  :avsnitt "V-7.I" ;
   :avsnitt "V-8" ;
-  :kapitel "V-7" ;
   :kapitel "V-8" ;
   :kode "-" ;
-  :kode "I" ;
   rdfs:label "Spesielt kaiutstyr"@no ;
   rdfs:subClassOf :Kodeliste ;
 .
@@ -8202,10 +8194,7 @@ vann:preferredNamespaceUri
 :Spesielt_kaiutstyr_element
   rdf:type owl:Class ;
   :avsnitt "V-7.I" ;
-  :avsnitt "V-8" ;
   :kapitel "V-7" ;
-  :kapitel "V-8" ;
-  :kode "-" ;
   :kode "I" ;
   rdfs:label "Spesielt kaiutstyr"@no ;
   rdfs:subClassOf :Byggverkselement ;
@@ -8797,12 +8786,9 @@ Byggverkstyper 91 og 92 (støttemurer) tilhører Kategori 7 – Støttekonstruks
 .
 :Utstyr
   rdf:type owl:Class ;
-  :avsnitt "V-7.H" ;
   :avsnitt "V-8" ;
-  :kapitel "V-7" ;
   :kapitel "V-8" ;
   :kode "-" ;
-  :kode "H" ;
   rdfs:label "Utstyr"@no ;
   rdfs:subClassOf :Kodeliste ;
 .
@@ -9805,10 +9791,7 @@ Byggverkstyper 91 og 92 (støttemurer) tilhører Kategori 7 – Støttekonstruks
 :Utstyr_element
   rdf:type owl:Class ;
   :avsnitt "V-7.H" ;
-  :avsnitt "V-8" ;
   :kapitel "V-7" ;
-  :kapitel "V-8" ;
-  :kode "-" ;
   :kode "H" ;
   rdfs:label "Utstyr"@no ;
   rdfs:subClassOf :Byggverkselement ;
@@ -10282,4 +10265,5 @@ Byggverkstyper 91 og 92 (støttemurer) tilhører Kategori 7 – Støttekonstruks
   :kode "5"^^xsd:int ;
   rdfs:label "-"@no ;
   rdfs:subClassOf :Byggverk ;
+  owl:deprecated "true"^^xsd:boolean ;
 .
