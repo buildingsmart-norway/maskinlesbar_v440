@@ -22,8 +22,8 @@
   rdf:type owl:Ontology ;
   dc:creator v440:SVV ;
   dc:creator v440:bSINorway ;
-  dc:title "Hb V440, Kapitel 7 - Brudata" ;
-  dcterms:abstract "Ontologi som representerer innehållet i Håndbok V440, kapitel 7 - Brudata"@no ;
+  dc:title "Hb V440, kapittel 7 - Brudata" ;
+  dcterms:abstract "Ontologi som representerer innehållet i Håndbok V440, kapittel 7 - Brudata"@no ;
   dcterms:created "2020-02-06" ;
   vann:preferredNamespacePrefix "v440bd" ;
   vann:preferredNamespaceUri "http://www.vegvesen.no/def/test/v440-brudata-owl" ;
@@ -35,7 +35,7 @@
 .
 :Administrative_data
   rdf:type owl:Class ;
-  v440:kapitel "7.4.1" ;
+  v440:kapittel "7.4.1" ;
   rdfs:label "Administrative data"@no ;
   rdfs:subClassOf :KompleksEgenskap ;
   rdfs:subClassOf [
@@ -67,7 +67,7 @@
 :Akse
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapitel "7.9.6" ;
+  v440:kapittel "7.9.6" ;
   rdfs:comment """Akser benyttes til å stedfeste beliggenheten av bruas hovedelementer og danner utgangspunktet for registrering av bæresystemets spennvidder. Akser må derfor angis slik at korrekte spennvidder blir registrert.
 Identifisering av akser skjer ved tildeling av et entydig aksenummer. Aksenummereringen skal normalt følge stigende kilometreringsretning på vegen og kan starte
 med 0 eller 1, men dersom oversiktstegning viser annen retning følges tegningen."""@no ;
@@ -175,7 +175,7 @@ med 0 eller 1, men dersom oversiktstegning viser annen retning følges tegningen
 :Arkivdata
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapitel "7.4.9" ;
+  v440:kapittel "7.4.9" ;
   rdfs:label "Arkivdata"@no ;
   rdfs:subClassOf :KompleksEgenskap ;
   rdfs:subClassOf [
@@ -269,7 +269,7 @@ Eksempler:
 .
 :Beliggenhet
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.5.1" ;
+  v440:kapittel "7.5.1" ;
   rdfs:comment "Bruas beliggenhet i forhold til vegen eller terrenget. En bru kan ha tilknytning til flere veger og landskapsdeler. Den beliggenheten som benyttes av bruas vedlikeholds-ansvarlige markeres som hovedvegidentifikasjon. For koder se pkt. V-3.1."@no ;
   rdfs:domain :Vegidentifisering ;
   rdfs:label "Bruas plassering i forhold til vegen"@no ;
@@ -399,7 +399,7 @@ Målt langs senterlinje veg. Beregnes automatisk av Brutus."""@no ;
 .
 :Byggedata
   rdf:type owl:Class ;
-  v440:kapitel "7.4.2" ;
+  v440:kapittel "7.4.2" ;
   rdfs:subClassOf :KompleksEgenskap ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -432,7 +432,7 @@ Målt langs senterlinje veg. Beregnes automatisk av Brutus."""@no ;
 .
 :Byggeplan
   rdf:type owl:Class ;
-  v440:kapitel "7.4.2" ;
+  v440:kapittel "7.4.2" ;
   rdfs:label "Byggeplan"@no ;
   rdfs:subClassOf :KompleksEgenskap ;
   rdfs:subClassOf [
@@ -506,7 +506,7 @@ Eksempler:
 .
 :Erstatter
   rdf:type owl:DatatypeProperty ;
-  v440:kapitel "7.4.4" ;
+  v440:kapittel "7.4.4" ;
   rdfs:comment """Angir om denne brua har tatt over funksjonen til en annen/tidligere bru på samme sted. Oppgi brunummeret og brunavnet til den tidligere brua som er blitt erstattet.
 Eksempler:
 • 01-0307 Ørje Kanal
@@ -517,7 +517,7 @@ Eksempler:
 .
 :ErstattetAv
   rdf:type owl:DatatypeProperty ;
-  v440:kapitel "7.4.4" ;
+  v440:kapittel "7.4.4" ;
   rdfs:comment """Angir om en annen/ nyere bru har tatt over funksjonen til denne brua. Oppgi brunummeret til den nye brua som har erstattet denne brua.
 Eksempler:
 • 01-0900 Ørje kanal
@@ -553,7 +553,7 @@ Eksempler:
 .
 :ForsterkningOgOmbygging
   rdf:type owl:Class ;
-  v440:kapitel "7.4.3" ;
+  v440:kapittel "7.4.3" ;
   rdfs:subClassOf :KompleksEgenskap ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -687,7 +687,7 @@ Eksempler:
 :GrundegenskaperVanligBru
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapitel "7.7.2" ;
+  v440:kapittel "7.7.2" ;
   rdfs:comment "Avser (Kategori : 1- Vegbru, 3- G/S-bru, 8- Jernbanebru"@no ;
   rdfs:label "Grundegenskaper vanlig bru"@no ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -774,7 +774,7 @@ Eksempler:
 .
 :Hovedbyggverkstype
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.7.2" ;
+  v440:kapittel "7.7.2" ;
   rdfs:comment "Identifisering (ID) av konstruksjonens hovedbyggverkstype. En bru kan bestå av flere byggverkstyper, f.eks. bjelkebru, platebru, hengebru, osv. Hovedbyggverkstypen identifiserer hvilken type som er dominerende i konstruksjonen eller som utgjør den største delen av brua og som blir registrert i byggverkets profil/ hoveddata. Ved oppføring av flere byggverkstyper gis den med den høyeste byggverkstypekoden automatisk ID-status, men dette kan overstyres av bruker."@no ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Hovedbyggverkstype"@no ;
@@ -784,7 +784,7 @@ Eksempler:
 .
 :Hoveddata_Bruidentifikasjon
   rdf:type owl:Class ;
-  v440:kapitel "7.3" ;
+  v440:kapittel "7.3" ;
   rdfs:label "Hoveddata/Bruidentifikasjon"@no ;
   rdfs:subClassOf :KompleksEgenskap ;
   rdfs:subClassOf [
@@ -1005,7 +1005,7 @@ Beregnes av Brutus som (kai)lengde x (kai) bredde."""@no ;
 :Koordinater
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapitel "7.9.7" ;
+  v440:kapittel "7.9.7" ;
   rdfs:comment "Koordinater er i et format til bruk for forsvaret."@no ;
   rdfs:label "Koordinater"@no ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -1066,7 +1066,7 @@ Beregnes av Brutus som (kai)lengde x (kai) bredde."""@no ;
 :Kvalitetssikring_av_registreringer
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapitel "7.4.10" ;
+  v440:kapittel "7.4.10" ;
   rdfs:comment "De aktuelle datafeltene nedenfor skal alltid fylles ut ved registrering av data i Brutus."@no ;
   rdfs:label "Kvalitetssikring av registreringer"@no ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -1140,7 +1140,7 @@ Beregnes av Brutus som (kai)lengde x (kai) bredde."""@no ;
 :Lastdata_ke
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapitel "7.6" ;
+  v440:kapittel "7.6" ;
   rdfs:comment "Lastdata som kompleks egenskap"@no ;
   rdfs:label "Lastdata"@no ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -1470,7 +1470,7 @@ fig 7.9.6-11 til 7.9.6-16."""@no ;
 :SpesielleAvtaler
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapitel "7.4.8" ;
+  v440:kapittel "7.4.8" ;
   rdfs:comment "Avtaler tilknyttet brua registreres. Utgåtte avtaler slettes fra Brutus, men tas vare på i arkivet."@no ;
   rdfs:label "Spesielle avtaler"@no ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -1521,7 +1521,7 @@ fig 7.9.6-11 til 7.9.6-16."""@no ;
 :Storrelser_for_bruer
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapitel "7.9.1" ;
+  v440:kapittel "7.9.1" ;
   rdfs:comment "Disse størrelsene gjelder for Kategori 1-Vegbruer, 3-G/S-bruer og 8-Jernbanebruer, dvs. ordinære bruer i dagen."@no ;
   rdfs:label "Størrelser for bruer"@no ;
   rdfs:subClassOf :Storrelser ;
@@ -1574,7 +1574,7 @@ fig 7.9.6-11 til 7.9.6-16."""@no ;
 :Storrelser_for_ferjeleier
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapitel "7.9.4" ;
+  v440:kapittel "7.9.4" ;
   rdfs:comment "Disse størrelsene gjelder for Kategori 4-Ferjeleie."@no ;
   rdfs:label "Størrelser for ferjeleier"@no ;
   rdfs:subClassOf :Storrelser ;
@@ -1642,7 +1642,7 @@ fig 7.9.6-11 til 7.9.6-16."""@no ;
 :Storrelser_for_konstruksjoner_i_fylling
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapitel "7.9.2" ;
+  v440:kapittel "7.9.2" ;
   rdfs:comment "Disse størrelsene gjelder for kategori 2-Bru i fylling og byggverkstype 1. Gjennomløpslengden til disse byggverkene går normalt tvers gjennom den overliggende vegfyllingen. Vegen som byggverkene betjener ligger oppå denne vegfyllingen."@no ;
   rdfs:label "Størrelser for konstruksjoner i fylling"@no ;
   rdfs:subClassOf :Storrelser ;
@@ -1695,7 +1695,7 @@ fig 7.9.6-11 til 7.9.6-16."""@no ;
 :Storrelser_for_stottekonstruksjoner
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapitel "7.9.5" ;
+  v440:kapittel "7.9.5" ;
   rdfs:comment "Disse størrelsene gjelder for Kategori 7-Støttekonstruksjoner."@no ;
   rdfs:label "Størrelser for støttekonstruksjoner"@no ;
   rdfs:subClassOf :Storrelser ;
@@ -1718,7 +1718,7 @@ fig 7.9.6-11 til 7.9.6-16."""@no ;
 :Storrelser_for_tunneler_og_vegoverbygg
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapitel "7.9.3" ;
+  v440:kapittel "7.9.3" ;
   rdfs:comment "Disse størrelsene gjelder for Kategori 6-Tunnel/ Vegoverbygg."@no ;
   rdfs:label "Størrelser for tunneler og vegoverbygg"@no ;
   rdfs:subClassOf :Storrelser ;
@@ -1769,7 +1769,7 @@ Eksempler:
 :Trafikkromsmal
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapitel "7.5.2" ;
+  v440:kapittel "7.5.2" ;
   rdfs:comment "Bredder (føringsavstander) og høyder gjelder for den aktuelle vegtilknytningen. Dvs. at vegen på brua, vegen under brua og elv/sjø under brua har tre ulike sett med bredder og høyder. Alle bredder måles horisontalt eller angis som horisontalprojeksjon på vannlinjen. Alle høyder måles vertikalt eller angis som vertikalprojeksjon på loddlinjen."@no ;
   rdfs:label "Trafikkromsmål"@no ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -1990,7 +1990,7 @@ Tromsø: Z0 = 1.61m = MSL 1.61 m – LAT 0.00 m"""@no ;
 .
 :harAdministrative_data
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.4.1" ;
+  v440:kapittel "7.4.1" ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Administrative data"@no ;
   rdfs:range :Administrative_data ;
@@ -2047,7 +2047,7 @@ Tromsø: Z0 = 1.61m = MSL 1.61 m – LAT 0.00 m"""@no ;
 .
 :harBruidentifikasjon
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.3" ;
+  v440:kapittel "7.3" ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Hoveddata/Bruidentifikasjon"@no ;
   rdfs:range :Hoveddata_Bruidentifikasjon ;
@@ -2069,7 +2069,7 @@ Eksempler:
 .
 :harBrustatus
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.4.5" ;
+  v440:kapittel "7.4.5" ;
   rdfs:comment "Bruas status angir i hvilken fase/ stadium brua er i sitt livsløp: planlagt, trafikkert, nedlagt/sperret eller revet. Se kap. 6. For koder se pkt. V-5.2."@no ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Brustatus"@no ;
@@ -2078,14 +2078,14 @@ Eksempler:
 .
 :harByggedata
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.4.2" ;
+  v440:kapittel "7.4.2" ;
   rdfs:domain v440:Byggverk ;
   rdfs:range :Byggedata ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
 .
 :harByggeplan
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.4.2" ;
+  v440:kapittel "7.4.2" ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Byggeplan"@no ;
   rdfs:range :Byggeplan ;
@@ -2129,7 +2129,7 @@ Eksempler:
 .
 :harForsterkningerOgOmbygginger
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.4.3" ;
+  v440:kapittel "7.4.3" ;
   rdfs:domain v440:Byggverk ;
   rdfs:range :ForsterkningOgOmbygging ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
@@ -2158,7 +2158,7 @@ Eksempler:
 .
 :harGrundegenskaperVanligBru
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.7.2" ;
+  v440:kapittel "7.7.2" ;
   rdfs:comment "Avser (Kategori : 1- Vegbru, 3- G/S-bru, 8- Jernbanebru"@no ;
   rdfs:domain v440:Ordinar_bru_i_dagen ;
   rdfs:label "Grundegenskaper vanlig bru"@no ;
@@ -2215,7 +2215,7 @@ Eksempler:
 .
 :harKoordinater
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.9.7" ;
+  v440:kapittel "7.9.7" ;
   rdfs:comment "Koordinater er i et format til bruk for forsvaret."@no ;
   rdfs:domain :GrundegenskaperVanligBru ;
   rdfs:label "Koordinater"@no ;
@@ -2224,7 +2224,7 @@ Eksempler:
 .
 :harKvalitetssikring_av_registreringer
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.4.10" ;
+  v440:kapittel "7.4.10" ;
   rdfs:comment "De aktuelle datafeltene nedenfor skal alltid fylles ut ved registrering av data i Brutus."@no ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Kvalitetssikring av registreringer"@no ;
@@ -2249,7 +2249,7 @@ Eksempler:
 .
 :harLastdata_ke
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.6" ;
+  v440:kapittel "7.6" ;
   rdfs:comment "Lastdata som kompleks egenskap"@no ;
   rdfs:label "Lastdata"@no ;
   rdfs:range :Lastdata_ke ;
@@ -2410,7 +2410,7 @@ Eksempler:
 .
 :harSpesielleAvtaler
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.4.8" ;
+  v440:kapittel "7.4.8" ;
   rdfs:comment "Avtaler tilknyttet brua registreres. Utgåtte avtaler slettes fra Brutus, men tas vare på i arkivet."@no ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Spesielle avtaler"@no ;
@@ -2433,7 +2433,7 @@ Eksempler:
 .
 :harStorrelser_for_bruer
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.9.1" ;
+  v440:kapittel "7.9.1" ;
   rdfs:comment "Disse størrelsene gjelder for Kategori 1-Vegbruer, 3-G/S-bruer og 8-Jernbanebruer, dvs. ordinære bruer i dagen."@no ;
   rdfs:domain v440:Ordinar_bru_i_dagen ;
   rdfs:label "Størrelser for bruer"@no ;
@@ -2442,7 +2442,7 @@ Eksempler:
 .
 :harStorrelser_for_ferjeleier
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.9.4" ;
+  v440:kapittel "7.9.4" ;
   rdfs:comment "Disse størrelsene gjelder for Kategori 4-Ferjeleie."@no ;
   rdfs:domain v440:Ferjeleie ;
   rdfs:label "Størrelser for ferjeleier"@no ;
@@ -2451,7 +2451,7 @@ Eksempler:
 .
 :harStorrelser_for_konstruksjoner_i_fylling
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.9.2" ;
+  v440:kapittel "7.9.2" ;
   rdfs:comment "Disse størrelsene gjelder for kategori 2-Bru i fylling og byggverkstype 1. Gjennomløpslengden til disse byggverkene går normalt tvers gjennom den overliggende vegfyllingen. Vegen som byggverkene betjener ligger oppå denne vegfyllingen."@no ;
   rdfs:domain v440:Bru_i_fylling ;
   rdfs:label "Størrelser for konstruksjoner i fylling"@no ;
@@ -2460,7 +2460,7 @@ Eksempler:
 .
 :harStorrelser_for_stottekonstruksjoner
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.9.5" ;
+  v440:kapittel "7.9.5" ;
   rdfs:comment "Disse størrelsene gjelder for Kategori 7-Støttekonstruksjoner."@no ;
   rdfs:domain v440:Stottekonstruksjon ;
   rdfs:label "Størrelser for støttekonstruksjoner"@no ;
@@ -2469,7 +2469,7 @@ Eksempler:
 .
 :harStorrelser_for_tunneler_og_vegoverbygg
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.9.3" ;
+  v440:kapittel "7.9.3" ;
   rdfs:comment "Disse størrelsene gjelder for Kategori 6-Tunnel/ Vegoverbygg."@no ;
   rdfs:domain v440:Tunnel_vegoverbygg ;
   rdfs:label "Størrelser for tunneler og vegoverbygg"@no ;
@@ -2478,7 +2478,7 @@ Eksempler:
 .
 :harTrafikkromsmal
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.5.2" ;
+  v440:kapittel "7.5.2" ;
   rdfs:comment "Bredder (føringsavstander) og høyder gjelder for den aktuelle vegtilknytningen. Dvs. at vegen på brua, vegen under brua og elv/sjø under brua har tre ulike sett med bredder og høyder. Alle bredder måles horisontalt eller angis som horisontalprojeksjon på vannlinjen. Alle høyder måles vertikalt eller angis som vertikalprojeksjon på loddlinjen."@no ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Trafikkromsmål"@no ;
@@ -2503,7 +2503,7 @@ Eksempler:
 .
 :harVegidentifisering
   rdf:type owl:ObjectProperty ;
-  v440:kapitel "7.5.1" ;
+  v440:kapittel "7.5.1" ;
   rdfs:comment "Vegidentifisering (vegident.) angir vegbeliggenhet, vegkategori, vegstatus, vegnr., hovedparsell og kilometerangivelse. Landskap som terreng eller bebyggelse nær byggverket blir tilknyttet på samme måte som veg, men uten angivelse av vegkategori og vegnr. Kun navn skal angis for landskapsdeler."@no ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Vegidentifisering"@no ;
