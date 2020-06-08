@@ -1,6 +1,6 @@
 # Maskinlesbar v440
 
-**For information about the project in English, please see the Presentations folder of this repo**
+**For information about the project in English, please see the Presentations folder and the Wiki page of this repo.**
 
 ## Introduksjon
 
