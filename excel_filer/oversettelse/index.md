@@ -1,0 +1,1 @@
+Regneark omfatter oversettelse Navn til engelsk.
