@@ -1,10 +1,10 @@
-# baseURI: http://rdf.vegdata.no/V440/v440-brudata-owl
+# baseURI: https://ontologi.atlas.vegvesen.no/v440/core/v440-brudata-owl
 # imports: http://purl.org/dc/elements/1.1/
-# imports: http://rdf.vegdata.no/V440/v440-owl
 # imports: http://xmlns.com/foaf/spec/
+# imports: https://ontologi.atlas.vegvesen.no/v440/core/v440-owl
 # imports: https://w3id.org/def/basicsemantics-owl
 
-@prefix : <http://rdf.vegdata.no/V440/v440-brudata-owl#> .
+@prefix : <https://ontologi.atlas.vegvesen.no/v440/core/v440-brudata-owl#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -13,12 +13,16 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix v440: <http://rdf.vegdata.no/V440/v440-owl#> .
+@prefix v440: <https://ontologi.atlas.vegvesen.no/v440/core/v440-owl#> .
 @prefix v440bd: <http://rdf.vegdata.no/v440-brudata-owl#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://rdf.vegdata.no/V440/v440-brudata-owl>
+<http://rdf.vegdata.no/V440/v440-brudata-owl#ttp://rdf.vegdata.no/V440/v440-owl#kode>
+  rdfs:label "V440 code"@en ;
+  rdfs:label "V440-kode"@no ;
+.
+<https://ontologi.atlas.vegvesen.no/v440/core/v440-brudata-owl>
   rdf:type owl:Ontology ;
   dc:creator v440:SVV ;
   dc:creator v440:bSINorway ;
@@ -28,14 +32,13 @@
   vann:preferredNamespacePrefix "v440bd" ;
   vann:preferredNamespaceUri "http://www.vegvesen.no/def/test/v440-brudata-owl" ;
   owl:imports dc: ;
-  owl:imports <http://rdf.vegdata.no/V440/v440-owl> ;
   owl:imports <http://xmlns.com/foaf/spec/> ;
+  owl:imports <https://ontologi.atlas.vegvesen.no/v440/core/v440-owl> ;
   owl:imports <https://w3id.org/def/basicsemantics-owl> ;
   owl:versionInfo "0.91" ;
 .
 :Administrative_data
   rdf:type owl:Class ;
-  v440:kapittel "7.4.1" ;
   rdfs:label "Administrative data"@en ;
   rdfs:label "Administrative data"@no ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -64,11 +67,11 @@
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :Vedlikeholdsansvarlig ;
     ] ;
+  v440:kapittel "7.4.1" ;
 .
 :Akse
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapittel "7.9.6" ;
   rdfs:label "Akse"@no ;
   rdfs:label "Axis"@en ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -82,6 +85,7 @@
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :Spennvidde ;
     ] ;
+  v440:kapittel "7.9.6" ;
 .
 :AkseFra
   rdf:type owl:DatatypeProperty ;
@@ -180,7 +184,6 @@
 :Arkivdata
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapittel "7.4.9" ;
   rdfs:label "Archive data"@en ;
   rdfs:label "Arkivdata"@no ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -209,6 +212,7 @@
       owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :Originaltegning ;
     ] ;
+  v440:kapittel "7.4.9" ;
 .
 :Arkivmerknad
   rdf:type owl:DatatypeProperty ;
@@ -280,12 +284,12 @@
 .
 :Beliggenhet
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.5.1" ;
   rdfs:domain :Vegidentifisering ;
   rdfs:label "Bruas plassering i forhold til vegen"@no ;
   rdfs:label "Position of the bridge relative to the carriageway"@en ;
   rdfs:range v440:Vegdata_Kode_for_beliggenhet ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
+  v440:kapittel "7.5.1" ;
 .
 :Beliggenhet_tekst
   rdf:type owl:DatatypeProperty ;
@@ -396,7 +400,6 @@
 .
 :Byggedata
   rdf:type owl:Class ;
-  v440:kapittel "7.4.2" ;
   rdfs:label "Byggedata"@no ;
   rdfs:label "Construction data"@en ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -420,6 +423,7 @@
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :Totalpris ;
     ] ;
+  v440:kapittel "7.4.2" ;
 .
 :Byggeleder
   rdf:type owl:DatatypeProperty ;
@@ -431,7 +435,6 @@
 .
 :Byggeplan
   rdf:type owl:Class ;
-  v440:kapittel "7.4.2" ;
   rdfs:label "Byggeplan"@no ;
   rdfs:label "Construction plan"@en ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -445,6 +448,7 @@
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :GodkjentAv ;
     ] ;
+  v440:kapittel "7.4.2" ;
 .
 :Byggverksnummer
   rdf:type owl:DatatypeProperty ;
@@ -506,20 +510,20 @@
 .
 :Erstatter
   rdf:type owl:DatatypeProperty ;
-  v440:kapittel "7.4.4" ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Bridge replaces former bridge with no / name"@en ;
   rdfs:label "Denne brua erstatter tidligere bru med nr/navn"@no ;
   rdfs:subPropertyOf :Tekst ;
+  v440:kapittel "7.4.4" ;
 .
 :ErstattetAv
   rdf:type owl:DatatypeProperty ;
-  v440:kapittel "7.4.4" ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Bridge is replaced with a new bridge with no / name"@en ;
   rdfs:label "Denne brua er erstattet av ny bru med nr/navn"@no ;
   rdfs:subPropertyOf :Tekst ;
   owl:inverseOf :Erstatter ;
+  v440:kapittel "7.4.4" ;
 .
 :FK-omrade
   rdf:type owl:ObjectProperty ;
@@ -545,7 +549,6 @@
 .
 :ForsterkningOgOmbygging
   rdf:type owl:Class ;
-  v440:kapittel "7.4.3" ;
   rdfs:label "Forsterkning og ombygging"@no ;
   rdfs:label "Reinforcement and reconstruction"@en ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -559,6 +562,7 @@
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :harForsterkningOmbygging ;
     ] ;
+  v440:kapittel "7.4.3" ;
 .
 :Foto
   rdf:type owl:DatatypeProperty ;
@@ -679,7 +683,6 @@ Eksempler:
 :GrundegenskaperVanligBru
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapittel "7.7.2" ;
   rdfs:label "Grundegenskaper vanlig bru"@no ;
   rdfs:label "Primary properties common bridge"@en ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -718,6 +721,7 @@ Eksempler:
       owl:minCardinality "0"^^xsd:nonNegativeInteger ;
       owl:onProperty :harKoordinater ;
     ] ;
+  v440:kapittel "7.7.2" ;
 .
 :HendelserOgErfaringer
   rdf:type owl:Class ;
@@ -768,17 +772,16 @@ Eksempler:
 .
 :Hovedbyggverkstype
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.7.2" ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Hovedbyggverkstype"@no ;
   rdfs:label "Main Construction Type"@en ;
   rdfs:range v440:Byggverksdel ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasPart> ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
+  v440:kapittel "7.7.2" ;
 .
 :Hoveddata_Bruidentifikasjon
   rdf:type owl:Class ;
-  v440:kapittel "7.3" ;
   rdfs:label "Hoveddata/Bruidentifikasjon"@no ;
   rdfs:label "Main data / Bridge identification"@en ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -797,6 +800,7 @@ Eksempler:
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :Navn ;
     ] ;
+  v440:kapittel "7.3" ;
 .
 :Hovedparsell
   rdf:type owl:DatatypeProperty ;
@@ -996,7 +1000,6 @@ Eksempler:
 :Koordinater
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapittel "7.9.7" ;
   rdfs:label "Coordinates"@en ;
   rdfs:label "Koordinater"@no ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -1025,6 +1028,7 @@ Eksempler:
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :harLengdekoordinat ;
     ] ;
+  v440:kapittel "7.9.7" ;
 .
 :Koordinatformat
   rdf:type owl:DatatypeProperty ;
@@ -1057,7 +1061,6 @@ Eksempler:
 :Kvalitetssikring_av_registreringer
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapittel "7.4.10" ;
   rdfs:label "Kvalitetssikring av registreringer"@no ;
   rdfs:label "Quality assurance of registrations"@en ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -1096,6 +1099,7 @@ Eksempler:
       owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :Sist_endret_av ;
     ] ;
+  v440:kapittel "7.4.10" ;
 .
 :Landomrade
   rdf:type owl:Class ;
@@ -1132,7 +1136,6 @@ Eksempler:
 :Lastdata_ke
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapittel "7.6" ;
   rdfs:label "Lastdata"@no ;
   rdfs:label "Loading criteria"@en ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -1166,6 +1169,7 @@ Eksempler:
       owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :Dispensasjon ;
     ] ;
+  v440:kapittel "7.6" ;
 .
 :Lengde
   rdf:type owl:DatatypeProperty ;
@@ -1457,7 +1461,6 @@ Eksempler:
 :SpesielleAvtaler
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapittel "7.4.8" ;
   rdfs:label "Special agreements"@en ;
   rdfs:label "Spesielle avtaler"@no ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -1476,6 +1479,7 @@ Eksempler:
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :Avtalepartner ;
     ] ;
+  v440:kapittel "7.4.8" ;
 .
 :StartAkse
   rdf:type owl:ObjectProperty ;
@@ -1510,7 +1514,6 @@ Eksempler:
 :Storrelser_for_bruer
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapittel "7.9.1" ;
   rdfs:label "Bridge sizes"@en ;
   rdfs:label "Størrelser for bruer"@no ;
   rdfs:subClassOf :Storrelser ;
@@ -1559,11 +1562,11 @@ Eksempler:
       owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :StorsteSpenn ;
     ] ;
+  v440:kapittel "7.9.1" ;
 .
 :Storrelser_for_ferjeleier
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapittel "7.9.4" ;
   rdfs:label "Ferry berth sizes"@en ;
   rdfs:label "Størrelser for ferjeleier"@no ;
   rdfs:subClassOf :Storrelser ;
@@ -1627,11 +1630,11 @@ Eksempler:
       owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :Kaiareal ;
     ] ;
+  v440:kapittel "7.9.4" ;
 .
 :Storrelser_for_konstruksjoner_i_fylling
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapittel "7.9.2" ;
   rdfs:label "Fill construction sizes"@en ;
   rdfs:label "Størrelser for konstruksjoner i fylling"@no ;
   rdfs:subClassOf :Storrelser ;
@@ -1680,11 +1683,11 @@ Eksempler:
       owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :Kjorebaneareal_kif ;
     ] ;
+  v440:kapittel "7.9.2" ;
 .
 :Storrelser_for_stottekonstruksjoner
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapittel "7.9.5" ;
   rdfs:label "Sizes of supporting structures"@en ;
   rdfs:label "Størrelser for støttekonstruksjoner"@no ;
   rdfs:subClassOf :Storrelser ;
@@ -1703,11 +1706,11 @@ Eksempler:
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :Lengde_sk ;
     ] ;
+  v440:kapittel "7.9.5" ;
 .
 :Storrelser_for_tunneler_og_vegoverbygg
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapittel "7.9.3" ;
   rdfs:label "Dimensions of tunnels and superstructures"@en ;
   rdfs:label "Størrelser for tunneler og vegoverbygg"@no ;
   rdfs:subClassOf :Storrelser ;
@@ -1726,6 +1729,7 @@ Eksempler:
       owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :Areal_t_vob ;
     ] ;
+  v440:kapittel "7.9.3" ;
 .
 :StorsteSpenn
   rdf:type owl:DatatypeProperty ;
@@ -1757,7 +1761,6 @@ Eksempler:
 :Trafikkromsmal
   rdf:type owl:Class ;
   rdf:type sh:Shape ;
-  v440:kapittel "7.5.2" ;
   rdfs:label "Traffic data"@en ;
   rdfs:label "Trafikkromsmål"@no ;
   rdfs:subClassOf :KompleksEgenskap ;
@@ -1821,6 +1824,7 @@ Eksempler:
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty :Venstre ;
     ] ;
+  v440:kapittel "7.5.2" ;
 .
 :Type
   rdf:type owl:ObjectProperty ;
@@ -1965,12 +1969,12 @@ Eksempler:
 .
 :harAdministrative_data
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.4.1" ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Administrative data"@en ;
   rdfs:label "Administrative data"@no ;
   rdfs:range :Administrative_data ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
+  v440:kapittel "7.4.1" ;
 .
 :harAkseFra
   rdf:type owl:ObjectProperty ;
@@ -2033,12 +2037,12 @@ Eksempler:
 .
 :harBruidentifikasjon
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.3" ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Hoveddata/Bruidentifikasjon"@no ;
   rdfs:label "Main data / Bridge identification"@en ;
   rdfs:range :Hoveddata_Bruidentifikasjon ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
+  v440:kapittel "7.3" ;
 .
 :harBrukslast
   rdf:type owl:ObjectProperty ;
@@ -2050,30 +2054,30 @@ Eksempler:
 .
 :harBrustatus
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.4.5" ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Bridge status"@en ;
   rdfs:label "Brustatus"@no ;
   rdfs:range :Brustatus ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
+  v440:kapittel "7.4.5" ;
 .
 :harByggedata
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.4.2" ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Byggedata"@no ;
   rdfs:label "Construction data"@en ;
   rdfs:range :Byggedata ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
+  v440:kapittel "7.4.2" ;
 .
 :harByggeplan
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.4.2" ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Byggeplan"@no ;
   rdfs:label "Construction plan"@en ;
   rdfs:range :Byggeplan ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
+  v440:kapittel "7.4.2" ;
 .
 :harElement
   rdf:type owl:ObjectProperty ;
@@ -2123,12 +2127,12 @@ Eksempler:
 .
 :harForsterkningerOgOmbygginger
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.4.3" ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Forsterkninger og ombygginger"@no ;
   rdfs:label "Reinforcements and modifications"@en ;
   rdfs:range :ForsterkningOgOmbygging ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
+  v440:kapittel "7.4.3" ;
 .
 :harFugeterskeltype
   rdf:type owl:ObjectProperty ;
@@ -2162,12 +2166,12 @@ Eksempler:
 .
 :harGrundegenskaperVanligBru
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.7.2" ;
   rdfs:domain v440:Ordinar_bru_i_dagen ;
   rdfs:label "Grundegenskaper vanlig bru"@no ;
   rdfs:label "Primary properties common bridge"@en ;
   rdfs:range :GrundegenskaperVanligBru ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
+  v440:kapittel "7.7.2" ;
 .
 :harGuardrailType
   rdf:type owl:ObjectProperty ;
@@ -2235,21 +2239,21 @@ Eksempler:
 .
 :harKoordinater
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.9.7" ;
   rdfs:domain :GrundegenskaperVanligBru ;
   rdfs:label "Coordinates"@en ;
   rdfs:label "Koordinater"@no ;
   rdfs:range :Koordinater ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
+  v440:kapittel "7.9.7" ;
 .
 :harKvalitetssikring_av_registreringer
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.4.10" ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Kvalitetssikring av registreringer"@no ;
   rdfs:label "Quality assurance of registrations"@en ;
   rdfs:range :Kvalitetssikring_av_registreringer ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
+  v440:kapittel "7.4.10" ;
 .
 :harLagertype
   rdf:type owl:ObjectProperty ;
@@ -2275,11 +2279,11 @@ Eksempler:
 .
 :harLastdata_ke
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.6" ;
   rdfs:label "Lastdata"@no ;
   rdfs:label "Loading criteria"@en ;
   rdfs:range :Lastdata_ke ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
+  v440:kapittel "7.6" ;
 .
 :harLastklasse
   rdf:type owl:ObjectProperty ;
@@ -2451,12 +2455,12 @@ Eksempler:
 .
 :harSpesielleAvtaler
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.4.8" ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Special agreements"@en ;
   rdfs:label "Spesielle avtaler"@no ;
   rdfs:range :SpesielleAvtaler ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
+  v440:kapittel "7.4.8" ;
 .
 :harStalsort
   rdf:type owl:ObjectProperty ;
@@ -2480,57 +2484,57 @@ Eksempler:
 .
 :harStorrelser_for_bruer
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.9.1" ;
   rdfs:domain v440:Ordinar_bru_i_dagen ;
   rdfs:label "Bridge sizes"@en ;
   rdfs:label "Størrelser for bruer"@no ;
   rdfs:range :Storrelser_for_bruer ;
   rdfs:subPropertyOf :harStorrelser ;
+  v440:kapittel "7.9.1" ;
 .
 :harStorrelser_for_ferjeleier
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.9.4" ;
   rdfs:domain v440:Ferjeleie ;
   rdfs:label "Ferry berth sizes"@en ;
   rdfs:label "Størrelser for ferjeleier"@no ;
   rdfs:range :Storrelser_for_ferjeleier ;
   rdfs:subPropertyOf :harStorrelser ;
+  v440:kapittel "7.9.4" ;
 .
 :harStorrelser_for_konstruksjoner_i_fylling
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.9.2" ;
   rdfs:domain v440:Bru_i_fylling ;
   rdfs:label "Fill construction sizes"@en ;
   rdfs:label "Størrelser for konstruksjoner i fylling"@no ;
   rdfs:range :Storrelser_for_konstruksjoner_i_fylling ;
   rdfs:subPropertyOf :harStorrelser ;
+  v440:kapittel "7.9.2" ;
 .
 :harStorrelser_for_stottekonstruksjoner
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.9.5" ;
   rdfs:domain v440:Stottekonstruksjon ;
   rdfs:label "Sizes of supporting structures"@en ;
   rdfs:label "Størrelser for støttekonstruksjoner"@no ;
   rdfs:range :Storrelser_for_stottekonstruksjoner ;
   rdfs:subPropertyOf :harStorrelser ;
+  v440:kapittel "7.9.5" ;
 .
 :harStorrelser_for_tunneler_og_vegoverbygg
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.9.3" ;
   rdfs:domain v440:Tunnel_vegoverbygg ;
   rdfs:label "Dimensions of tunnels and superstructures"@en ;
   rdfs:label "Størrelser for tunneler og vegoverbygg"@no ;
   rdfs:range :Storrelser_for_tunneler_og_vegoverbygg ;
   rdfs:subPropertyOf :harStorrelser ;
+  v440:kapittel "7.9.3" ;
 .
 :harTrafikkromsmal
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.5.2" ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Traffic data"@en ;
   rdfs:label "Trafikkromsmål"@no ;
   rdfs:range :Trafikkromsmal ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
+  v440:kapittel "7.5.2" ;
 .
 :harUnderelement
   rdf:type owl:ObjectProperty ;
@@ -2550,12 +2554,12 @@ Eksempler:
 .
 :harVegidentifisering
   rdf:type owl:ObjectProperty ;
-  v440:kapittel "7.5.1" ;
   rdfs:domain v440:Byggverk ;
   rdfs:label "Road identity"@en ;
   rdfs:label "Vegidentifisering"@no ;
   rdfs:range :Vegidentifisering ;
   rdfs:subPropertyOf <https://w3id.org/def/basicsemantics-owl#hasProperty> ;
+  v440:kapittel "7.5.1" ;
 .
 :harVingetype
   rdf:type owl:ObjectProperty ;
@@ -2589,10 +2593,6 @@ Eksempler:
   rdfs:label "Seconds"@en ;
   rdfs:label "Sekunder"@no ;
   rdfs:subPropertyOf :koordinatverdi ;
-.
-<http://rdf.vegdata.no/V440/v440-brudata-owl#ttp://rdf.vegdata.no/V440/v440-owl#kode>
-  rdfs:label "V440 code"@en ;
-  rdfs:label "V440-kode"@no ;
 .
 v440:Bjelke_bH_lik_eller_mindre_enn_1
   rdfs:subClassOf [
