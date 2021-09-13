@@ -1,21 +1,21 @@
-# baseURI: http://www.vegvesen.no/def/test/LRS_v440-smls
-# imports: http://rdf.vegdata.no/V440/v440-owl
+# baseURI: https://ontologi.atlas.vegvesen.no/v440/lrs/lrs_v440-smls
+# imports: https://ontologi.atlas.vegvesen.no/v440/core/v440-owl
 # imports: https://w3id.org/def/basicsemantics-owl
-# prefix: LRS_v440-smls
 
+@prefix : <https://ontologi.atlas.vegvesen.no/v440/lrs/lrs_v440-smls#> .
 @prefix LRS_v440-smls: <http://www.vegvesen.no/def/test/LRS_v440-smls#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix v440-owl: <http://rdf.vegdata.no/V440/v440-owl#> .
+@prefix v440-owl: <https://ontologi.atlas.vegvesen.no/v440/core/v440-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 v440-owl:Root
   owl:equivalentClass <https://w3id.org/def/basicsemantics-owl#PhysicalObject> ;
 .
-<http://www.vegvesen.no/def/test/LRS_v440-smls>
+<https://ontologi.atlas.vegvesen.no/v440/lrs/lrs_v440-smls>
   rdf:type owl:Ontology ;
-  owl:imports <http://rdf.vegdata.no/V440/v440-owl> ;
+  owl:imports <https://ontologi.atlas.vegvesen.no/v440/core/v440-owl> ;
   owl:imports <https://w3id.org/def/basicsemantics-owl> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
