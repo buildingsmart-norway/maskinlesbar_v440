@@ -1,11 +1,11 @@
-<HTML>
+﻿<HTML>
 <HEAD>
 <TITLE>v440:Grunn_og_underbygning_element</TITLE>
 </HEAD>
 <BODY>
 <FONT face="Verdana, Helvetica, sans-serif">
 <H2>
-<FONT SIZE="-1">http://rdf.vegdata.no/V440/v440-owl#Grunn_og_underbygning_element</FONT><BR>
+<FONT SIZE="-1">https://ontologi.atlas.vegvesen.no/v440/core/v440-owl#Grunn_og_underbygning_element</FONT><BR>
 Class v440:Grunn_og_underbygning_element</H2>
 <CENTER><IMG border="0" src="diagrams/v440_Grunn_og_underbygning_element.jpg"></CENTER><P>
 <HR>
@@ -16,12 +16,12 @@ Class v440:Grunn_og_underbygning_element</H2>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/RDFSClass.greyed.gif" width="16" height="16"></TD><TD><FONT size="-1">
-owl:Class</FONT></TD></TR></TABLE>
+sh:Shape</FONT></TD></TR></TABLE>
 </DD>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/RDFSClass.greyed.gif" width="16" height="16"></TD><TD><FONT size="-1">
-sh:Shape</FONT></TD></TR></TABLE>
+owl:Class</FONT></TD></TR></TABLE>
 </DD>
 </DL>
 </TD></TR>
@@ -29,24 +29,6 @@ sh:Shape</FONT></TD></TR></TABLE>
 <TD>
 <B><FONT size="-1">rdfs:subClassOf</FONT></B>
 <DL>
-<DD>
-<TABLE><TR><TD VALIGN="TOP">
-<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="harFundamenteringsmate.html">harFundamenteringsmate</A> exactly 1
-</FONT></TD></TR></TABLE>
-</DD>
-<DD>
-<TABLE><TR><TD VALIGN="TOP">
-<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="harFundamenteringsniva.html">harFundamenteringsniva</A> exactly 1
-</FONT></TD></TR></TABLE>
-</DD>
-<DD>
-<TABLE><TR><TD VALIGN="TOP">
-<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="harMassetype.html">harMassetype</A> exactly 1
-</FONT></TD></TR></TABLE>
-</DD>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
@@ -61,8 +43,38 @@ sh:Shape</FONT></TD></TR></TABLE>
 </DD>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="harMassetype.html">harMassetype</A> exactly 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="harFundamenteringsniva.html">harFundamenteringsniva</A> exactly 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="harFundamenteringsmate.html">harFundamenteringsmate</A> exactly 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/OWLNamedClassPrimitive.greyed.gif" width="16" height="16"></TD><TD><FONT size="-1">
 <A href="v440_Byggverkselement.html">v440:Byggverkselement</A></FONT></TD></TR></TABLE>
+</DD>
+</DL>
+</TD></TR>
+<TR BGCOLOR="white">
+<TD>
+<B><FONT size="-1">owl:disjointUnionOf</FONT></B>
+<DL>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/RDFList.greyed.gif" width="16" height="16"></TD><TD><FONT size="-1">
+[<A href="v440_Underbygning.html">v440:Underbygning</A>,<BR><A href="v440_Grunnen.html">v440:Grunnen</A>]
+</FONT></TD></TR></TABLE>
 </DD>
 </DL>
 </TD></TR>
@@ -72,7 +84,7 @@ sh:Shape</FONT></TD></TR></TABLE>
 <B>References</B></FONT></TH>
 </TR>
 <TR><TD><FONT size="-1"><UL>
-<LI>as rdfs:domain (<A href="harMassetype.html">harMassetype</A>,&nbsp;<A href="harPeletype.html">harPeletype</A>,&nbsp;<A href="harFundamenteringsniva.html">harFundamenteringsniva</A>,&nbsp;<A href="harFundamenteringsmate.html">harFundamenteringsmate</A>,&nbsp;<A href="harPakjorselsvern.html">harPakjorselsvern</A>)</LI><LI>as rdfs:subClassOf (<A href="v440_Underbygning.html">v440:Underbygning</A>,&nbsp;<A href="v440_Grunnen.html">v440:Grunnen</A>)</LI></UL></FONT></TABLE><P>
+<LI>as owl:disjointUnionOf (<A href="v440_Byggverkselement.html">v440:Byggverkselement</A>)</LI><LI>as rdfs:domain (<A href="harPeletype.html">harPeletype</A>,&nbsp;<A href="harPakjorselsvern.html">harPakjorselsvern</A>,&nbsp;<A href="harMassetype.html">harMassetype</A>,&nbsp;<A href="harFundamenteringsniva.html">harFundamenteringsniva</A>,&nbsp;<A href="harFundamenteringsmate.html">harFundamenteringsmate</A>)</LI><LI>as rdfs:subClassOf (<A href="v440_Underbygning.html">v440:Underbygning</A>,&nbsp;<A href="v440_Grunnen.html">v440:Grunnen</A>)</LI></UL></FONT></TABLE><P>
 </FONT>
 <P align="right"><FONT size="-1" face="Verdana, Helvetica, sans-serif">Generated with <A href="http://www.topbraidcomposer.org" target="_top">TopBraid Composer</A>
  by <A href="http://www.topquadrant.com" target="_top">TopQuadrant, Inc.</A></P>
